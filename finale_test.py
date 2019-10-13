@@ -10,13 +10,10 @@ from email import encoders
 
 import os, re
 
-#fromaddr = "lkhaldiyasine@gmail.com"
-#toaddr = "ktechagency@gmail.com"
-#gmail_passwd = 'KEYGO@@133698'
-#fromaddr = "lkhaldiyasine@gmail.com"
+
 fromaddr = str(input("[!] Entre Your adress Email : "))
 #toaddr= str(input("[!] Entre Other adress Email : "))
-gmail_passwd = 'KEYGO@@133698'
+gmail_passwd = str(input("[!] Entre Your password : "))
 
 filepath = 'email_1.txt'
 with open(filepath) as fp:
@@ -82,14 +79,10 @@ while fini :
                file = input ('Nommer votre fichier pdf  [!] ')
                print ('The File name : {} '.format(file))
                print ('[!] Done ')
-               #file = input("Nommer votre fichier txt>>> ")
-               #file = "oncf-voyages-yassine lkhalidi.pdf"
+               
                while file == '':
                    file = input("Nommer votre fichier txt>>> ")
                    print (file)
-                   #attachment = open(" {}\\oncf-voyages-yassine lkhalidi.pdf", "rb".format(os.getcwd())
-                   
-                   #attachment = open("C:\\Users\\admin\\Desktop\\oncf-voyages-yassine lkhalidi.pdf", "rb")
                    print ('[!] Done ')
 ##                    with open(file+'.txt','r') as f:
 ##                        Lines = f.readlines()
@@ -116,7 +109,6 @@ p = MIMEBase('application', 'octet-stream')
 print(_dir+file)
 attachment = open(_dir+file, "rb")
 #attachment = open("C:\\Users\\admin\\Desktop\\r.pdf", "rb")
-#attachment = open("C:\\Users\\admin\\Desktop\\oncf-voyages-yassine lkhalidi.pdf", "rb")
 # To change the payload into encoded form 
 p.set_payload((attachment).read()) 
 
