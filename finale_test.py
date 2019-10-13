@@ -39,10 +39,6 @@ body = "This is an email Test From the Application Without the password and a th
 
 # attach the body with the msg instance 
 msg.attach(MIMEText(body, 'plain')) 
-
-# open the file to be sent 
-#filename = "oncf-voyages-yassine lkhalidi.pdf"
-#attachment = open("C:\\Users\\admin\\Desktop\\oncf-voyages-yassine lkhalidi.pdf", "rb")
 #global file=' '
 re_dir = r'[A-Z][:]([/\\]{1,2}[a-zA-Z]+)+([/\\]{1,2})?'
 re_num = r'^0[5-9]([-. ][0-9]{2}){4}$'
