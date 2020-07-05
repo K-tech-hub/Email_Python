@@ -2,7 +2,7 @@
 # from your Gmail account 
 
 # libraries to be imported
-#zakaria bahoum 
+
 import smtplib 
 from email.mime.multipart import MIMEMultipart 
 from email.mime.text import MIMEText 
